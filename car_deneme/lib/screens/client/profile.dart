@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../../core/localizations.dart';
 import '../../widgets/page/appbar.dart';
@@ -10,6 +13,28 @@ class profile extends StatefulWidget {
 
   @override
   State<profile> createState() => _profileState();
+}
+
+File? dosya;
+profilefotouptade() async {
+  try {
+    ImagePicker picker = ImagePicker();
+    XFile? secilendosya = await picker.pickImage(source: ImageSource.gallery);
+    if (secilendosya == null) {
+      setState() {
+        dosya = null;
+      }
+
+      return;
+    }
+
+    setState() {
+      dosya = File(secilendosya.path);
+    }
+  } on Exception catch (e) {
+    print("hata oluştu");
+    print(e);
+  }
 }
 
 class _profileState extends State<profile> {
@@ -225,9 +250,23 @@ Container profile_widget(BuildContext context) {
                     color: Color.fromARGB(255, 248, 249, 249),
                     fontWeight: FontWeight.w100,
                     fontSize: 15),
+              ),
+            ],
+          ),
+          Gap(20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              OutlinedButton(
+                onPressed: profilefotouptade,
+                child: Text(
+                  AppLocalizations.of(context).getTranslate("profile_change"),
+                  style: TextStyle(color: Color.fromARGB(255, 248, 249, 249)),
+                ),
               )
             ],
-          )
+          ),
+          if (dosya != null) Image.file(dosya!),
         ],
       ),
     ),

@@ -17,7 +17,7 @@ class _loaderState extends State<loader> {
   loadapp() async {
     final storage = Storage();
 
-    await storage.clearstorage(); // hafıza temizleme
+    // await storage.clearstorage(); // hafıza temizleme
     final firstlauched = await storage.isfirstlaunch();
 
     if (firstlauched) {
