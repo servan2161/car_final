@@ -1,4 +1,5 @@
 import 'package:car_project_vize/core/device.dart';
+import 'package:car_project_vize/screens/product/buyi5.dart';
 import 'package:car_project_vize/services/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -41,6 +42,14 @@ final routes = GoRouter(
           GoRoute(
             path: '/home',
             builder: (context, state) => const home(),
+          ),
+          GoRoute(
+            path: '/buyi5',
+            builder: (context, state) => const i5buy(),
+          ),
+          GoRoute(
+            path: '/bmw',
+            builder: (context, state) => const bmw(),
           ),
         ]),
     GoRoute(
@@ -86,10 +95,6 @@ final routes = GoRouter(
     GoRoute(
       path: '/home_deneme',
       builder: (context, state) => const home_deneme(),
-    ),
-    GoRoute(
-      path: '/bmw',
-      builder: (context, state) => const bmw(),
     ),
     GoRoute(
       path: '/bottom',

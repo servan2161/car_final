@@ -145,7 +145,9 @@ class _homeState extends State<home> {
                         primary: Color.fromARGB(255, 32, 36, 40),
                         minimumSize: Size(100, 35),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        context.push('/buyi5');
+                      },
                       child: Text(
                         AppLocalizations.of(context).getTranslate("buy"),
                         style: TextStyle(
