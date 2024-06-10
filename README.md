@@ -10,4 +10,7 @@
 <a> <img src="https://github.com/servan2161/car/assets/112212734/45578adf-3c78-4edd-a2f8-121f2c39b3e8" width=200></a>
 <a> <img src="https://github.com/servan2161/car/assets/112212734/bb1fe626-1ed0-408a-a396-424cd981fa0d" width=200></a>
 <a> <img src="https://github.com/servan2161/car/assets/112212734/fd1bd09b-7aa8-408c-85cc-41cc3f76e232" width=200></a>
-<a> <img src="https://github.com/servan2161/car_final/assets/112212734/c93983b2-007d-46c4-8bbb-dac4100a1bd2" width=200></a>
+<a> <img src="https://github.com/servan2161/car_final/assets/112212734/2bb5c7d2-08bb-404c-933c-f0287c804729" width=200></a>
+
+
+Araba satın alma uygulamamızı geliştirmek için elimizden geleni yapıyoruz.🚘​💻​🚀​🛍️​🏁​
