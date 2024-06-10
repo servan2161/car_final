@@ -95,8 +95,6 @@ class _i5buyState extends State<i5buy> {
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(25), // Sol üst köşeyi yuvarlar
             topRight: Radius.circular(25), // Sağ üst köşeyi yuvarlar
-            bottomLeft: Radius.circular(25),
-            bottomRight: Radius.circular(25),
           ),
           color: Color.fromARGB(255, 32, 36, 40)),
       child: Column(
